@@ -11,7 +11,6 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/streamlit/tw22ok.git .
-RUN copy 
 RUN pip3 install -r requirements.txt
 
-ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "tw22ok_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
