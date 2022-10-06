@@ -1,5 +1,31 @@
 # Tech Week Streamlit Talk
 
+## Introduction
+
+Difference in workflow for transactional vs. data centric application.
+
+Transactional:
+```
+ ┌────────────────┐         ┌────────────────┐         ┌────────────────┐         ┌────────────────┐
+ │                │         │                │         │                │         │                │
+ │                │         │                │         │                │         │                │
+ │      Code      ├────────►│      Data      ├────────►│   Confusion    ├────────►│    Solution    │
+ │                │         │                │         │                │         │                │
+ │                │         │                │         │                │         │                │
+ └────────────────┘         └────────────────┘         └────────────────┘         └────────────────┘
+```
+
+Data-centric:
+```
+ ┌────────────────┐         ┌────────────────┐         ┌────────────────┐         ┌────────────────┐
+ │                │         │                │         │                │         │                │
+ │                │         │                │         │                │         │                │
+ │      Data      ├────────►│   Confusion    ├────────►│      Code      ├────────►│    Solution    │
+ │                │         │                │         │                │         │                │
+ │                │         │                │         │                │         │                │
+ └────────────────┘         └────────────────┘         └────────────────┘         └────────────────┘
+```
+
 ## Presentation Flow
 
 ### Working with Notebooks
@@ -46,15 +72,21 @@ Link to documentation: [Streamlit Docs](https://docs.streamlit.io)
 if st.checkbox('Show result'):
 ```
 
+Show responsive UI
+
 #### Data Visualisation with Streamlit
 
 Open file: `tw22ok_hello_GPX.py`
 
 Run `streamlit run tw22ok_hello_GPX.py`
 
+Show responsive UI
+
 #### Deploy on Streamlit Cloud
 
-TODO: Deployment Workflow, Check update
+Go to [Streamlit Cloud](https://share.streamlit.io)
+
+*Mind the T&Cs!!!*
 
 #### Example for a real application
 

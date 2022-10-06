@@ -11,5 +11,4 @@ This is a nice blend of markdown and Python
 """)
 
 if st.checkbox('Show result'):
-    st.write(40+2)
-
+    st.write(40+4)
